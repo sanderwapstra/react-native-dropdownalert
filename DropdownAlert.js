@@ -54,6 +54,7 @@ export default class DropdownAlert extends Component {
     renderMessage: PropTypes.func,
     testID: PropTypes.string,
     accessibilityLabel: PropTypes.string,
+    accessibilityLabelCancel: PropTypes.string,
     accessible: PropTypes.bool,
     titleTextProps: PropTypes.object,
     messageTextProps: PropTypes.object,
@@ -140,6 +141,7 @@ export default class DropdownAlert extends Component {
     renderMessage: undefined,
     testID: undefined,
     accessibilityLabel: undefined,
+    accessibilityCancel: undefined,
     accessible: false,
     titleTextProps: undefined,
     messageTextProps: undefined,
@@ -418,6 +420,8 @@ export default class DropdownAlert extends Component {
       } else {
         return (
           <TouchableOpacity
+            accessibilityLabel={this.props.accessibilityLabelCancel}
+            accessible={this.props.accessible}
             style={{
               alignSelf: this.props.cancelBtnImageStyle.alignSelf,
               width: this.props.cancelBtnImageStyle.width,

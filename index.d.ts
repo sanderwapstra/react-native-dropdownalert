@@ -51,6 +51,7 @@ export interface DropdownAlertProps {
     testID?: string
     accessible?: boolean
     accessibilityLabel?: string
+    accessibilityLabelCancel?: string
     titleTextProps?: object
     messageTextProps?: object
   }

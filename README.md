@@ -11,12 +11,14 @@
 
 ### Table of contents
 
-1. [Support](#support)
-2. [Installation](#installation)
-3. [Demo](#demo)
-4. [Usage](#usage)
-5. [Props](#props)
-6. [Caveats](#caveats)
+- [react-native-dropdownalert](#react-native-dropdownalert)
+  - [Table of contents](#table-of-contents)
+  - [Support](#support)
+  - [Installation](#installation)
+  - [Demo](#demo)
+  - [Usage](#usage)
+  - [Caveats](#caveats)
+  - [Props](#props)
 
 A simple alert to notify users about new chat messages, something went wrong or everything is ok. It can be closed by tap, cancel button, automatically with `closeInterval`, pan responder up gesture or programmatically.
 
@@ -121,6 +123,7 @@ export default class App extends Component {
 | ```renderMessage``` | Function  | Use to override the message component  | undefined
 | ```testID``` | String |  Top level TouchableOpacity's testID | undefined
 | ```accessibilityLabel``` | String |  Top level TouchableOpacity's accessibilityLabel | undefined
+| ```accessibilityLabelCancel``` | String |  Top level TouchableOpacity's accessibilityLabel | undefined
 | ```accessible``` | Boolean |  Top level TouchableOpacity's accessible | false
 | ```titleTextProps``` | Object | title text props. **does not override numOfLines (use titleNumOfLines)** | undefined
 | ```messageTextProps``` | Object | message text props. **does not override numOfLines (use messageNumOfLines)** | undefined
